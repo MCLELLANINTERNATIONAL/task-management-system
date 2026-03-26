@@ -1,0 +1,54 @@
+# Compiled output from Kotlin/Java builds (not source code)
+
+# ----------------------------
+# Gradle
+# ----------------------------
+.gradle/
+build/
+
+# Gradle Wrapper (keep these)
+!gradle/wrapper/gradle-wrapper.jar
+!gradle/wrapper/gradle-wrapper.properties
+
+# ----------------------------
+# IntelliJ / IDE files
+# ----------------------------
+.idea/
+*.iml
+out/
+
+# ----------------------------
+# VS Code
+# ----------------------------
+.vscode/
+
+# ----------------------------
+# OS files
+# ----------------------------
+.DS_Store
+Thumbs.db
+
+# ----------------------------
+# Kotlin / Java compiled files
+# ----------------------------
+*.class
+*.jar
+*.war
+*.ear
+
+# ----------------------------
+# Logs
+# ----------------------------
+*.log
+
+# ----------------------------
+# Temporary files
+# ----------------------------
+*.tmp
+*.swp
+*~
+
+# ----------------------------
+# Local environment files
+# ----------------------------
+.env

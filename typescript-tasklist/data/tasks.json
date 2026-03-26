@@ -1,0 +1,71 @@
+[
+  {
+    "id": "task-101",
+    "title": "Complete TypeScript module project",
+    "completed": false,
+    "priority": "High",
+    "dueDate": "2026-03-14",
+    "subtasks": [
+      {
+        "id": "task-101-1",
+        "title": "Create TaskManager class",
+        "completed": true,
+        "priority": "High",
+        "subtasks": []
+      },
+      {
+        "id": "task-101-2",
+        "title": "Implement recursive functions",
+        "completed": false,
+        "priority": "Medium",
+        "subtasks": []
+      }
+    ]
+  },
+  {
+    "id": "task-102",
+    "title": "Prepare final README.md",
+    "completed": false,
+    "priority": "High",
+    "dueDate": "2026-03-16",
+    "subtasks": [
+      {
+        "id": "task-1774473932110-919",
+        "title": "Write requirement checklist section",
+        "completed": false,
+        "priority": "Medium",
+        "subtasks": []
+      },
+      {
+        "id": "task-1774484710992-402",
+        "title": "Write requirement checklist section",
+        "completed": false,
+        "priority": "Medium",
+        "subtasks": []
+      }
+    ]
+  },
+  {
+    "id": "task-103",
+    "title": "Test terminal output",
+    "completed": true,
+    "priority": "Low",
+    "subtasks": []
+  },
+  {
+    "id": "task-1774473932109-997",
+    "title": "Practice TypeScript classes",
+    "completed": false,
+    "priority": "High",
+    "dueDate": "2026-03-15",
+    "subtasks": []
+  },
+  {
+    "id": "task-1774484710992-693",
+    "title": "Practice TypeScript classes",
+    "completed": false,
+    "priority": "High",
+    "dueDate": "2026-03-15",
+    "subtasks": []
+  }
+]
