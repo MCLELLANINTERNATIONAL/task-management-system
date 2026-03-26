@@ -23,20 +23,60 @@ My project uses Gradle to manage dependencies and build the application. Kotlin�
 
 # Project Structure
 
-kotlin-task-viewer
+task-management-system/
 │
-├── src/
-│   └── main/
-│       └── kotlin/
-│           ├── Main.kt          # Entry point and application flow
-│           ├── Task.kt          # Data class representing a task
-│           ├── TaskManager.kt   # Core logic for managing tasks
-│           └── Menu.kt          # Menu display and user interaction
+├── kotlin-task-viewer/              # Module 2 (Kotlin project)
+│   ├── src/
+│   │   └── main/
+│   │       └── kotlin/
+│   │           ├── Main.kt
+│   │           ├── Menu.kt
+│   │           ├── Task.kt
+│   │           └── TaskManager.kt
+│   │
+│   ├── build/                      # Gradle output (generated)
+│   ├── .gradle/                    # Gradle cache (generated)
+│   ├── bin/                        # compiled artifacts (optional)
+│   ├── gradle/
+│   │   └── wrapper/
+│   │       ├── gradle-wrapper.jar
+│   │       └── gradle-wrapper.properties
 │
-├── build.gradle.kts            # Gradle build configuration
-├── settings.gradle.kts         # Project settings
-├── .gitignore                  # Files ignored by Git
-└── README.md                   # Project documentation
+│   ├── build.gradle.kts
+│   ├── settings.gradle.kts
+│   ├── gradlew
+│   ├── gradlew.bat
+│   ├── .gitignore
+│   └── README.md
+│
+├── typescript-tasklist/            # Module 1 (TypeScript project)
+│   ├── data/
+│   │   └── tasks.json
+│   │
+│   ├── src/
+│   │   ├── cli.ts
+│   │   ├── interactive.ts
+│   │   ├── taskManager.ts
+│   │   ├── storage.ts
+│   │   ├── sampleData.ts
+│   │   ├── types.ts
+│   │   ├── utils.ts
+│   │   ├── errors.ts
+│   │   ├── web.ts
+│   │   └── styles.css
+│   │
+│   ├── dist/                      # compiled JS (generated)
+│   ├── web-dist/                  # browser build (generated)
+│   ├── node_modules/              # dependencies
+│
+│   ├── index.html
+│   ├── package.json
+│   ├── package-lock.json
+│   ├── tsconfig.json
+│   ├── vite.config.ts
+│   ├── .gitignore
+│   └── README.md
+
 
 # Useful Websites
 
