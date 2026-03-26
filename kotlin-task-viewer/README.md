@@ -70,5 +70,7 @@ cd src/main/kotlin
 kotlinc *.kt -include-runtime -d app.jar
 java -jar app.jar
 
+or
+
 kt
 ./gradlew run
