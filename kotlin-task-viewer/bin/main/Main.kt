@@ -7,20 +7,20 @@
  * - conditionals
  * - expressions
  * - functions
- * - use of the when keyword
+ * - use of the 'when' keyword
  */
 fun main() {
-    val appName = "Kotlin Task Viewer"   // immutable variable
-    var running = true                   // mutable variable
+    val appName = "Kotlin Task Viewer"
+    var running = true
 
-    val manager = TaskManager()
+    var manager = TaskManager()
     manager.loadSampleTasks()
 
     println("Welcome to $appName")
 
     while (running) {
         showMenu()
-        print("Select an option: ")
+        print("Choose an option (1-9): ")
 
         val choice = readLine()?.toIntOrNull()
 
@@ -36,7 +36,10 @@ fun main() {
                 print("Enter priority (Low, Medium, High): ")
                 val priority = readLine() ?: "Medium"
 
-                manager.addTask(title, priority)
+                print("Enter due date (YYYY-MM-DD) or leave blank: ")
+                val dueDate = readLine()?.takeIf { it.isNotBlank() }
+
+                manager.addTask(title, priority, dueDate)
             }
 
             3 -> {
@@ -51,7 +54,7 @@ fun main() {
             }
 
             4 -> {
-                print("Enter task ID to remove: ")
+                print("Enter task ID to delete: ")
                 val id = readLine()?.toIntOrNull()
 
                 if (id != null) {
@@ -72,7 +75,10 @@ fun main() {
                     print("Enter new priority (Low, Medium, High): ")
                     val newPriority = readLine() ?: "Medium"
 
-                    manager.editTask(id, newTitle, newPriority)
+                    print("Enter new due date (YYYY-MM-DD) or leave blank: ")
+                    val newDueDate = readLine()?.takeIf { it.isNotBlank() }
+
+                    manager.editTask(id, newTitle, newPriority, newDueDate)
                 } else {
                     println("Invalid task ID.")
                 }
@@ -89,12 +95,18 @@ fun main() {
             }
 
             8 -> {
+                manager = TaskManager()
+                manager.loadSampleTasks()
+                println("Task list reset to sample tasks.")
+            }
+
+            9 -> {
                 println("Exiting program.")
                 running = false
             }
 
             else -> {
-                println("Invalid option. Please select a number from 1 to 8.")
+                println("Invalid option. Please choose a number from 1 to 9.")
             }
         }
     }
