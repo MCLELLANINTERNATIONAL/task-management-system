@@ -10,7 +10,8 @@ The Kotlin module that should be graded is located in `kotlin-task-viewer/`. The
 
 # Software Demo Video
 
-Video
+Video 1: Code and requirement walkthrough - https://www.loom.com/share/0170567f99ea4287871a9e65f609927b
+Video 2: Functionality demonstration - 
 
 # Project Structure
 
