@@ -1,25 +1,16 @@
 # Overview
 
-As a software engineer, I am passionate about enhancing my abilities in working with new coding languages. My project builds on my previous TypeScript Task List application by implementing a Kotlin-based task viewer, allowing me to explore how similar concepts can be applied in a different programming language.
+As a software engineer, I want to strengthen my ability to learn new programming languages by rebuilding familiar software in a different language and environment. This project demonstrates that goal by implementing a console-based task manager in Kotlin.
 
-The software I have developed is a console-based Kotlin Task Viewer application that allows users to manage tasks by adding, viewing, editing, removing, and searching tasks. The application demonstrates how Kotlin can be used to create structured, readable, and maintainable programs while handling user interaction through a command-line interface.
+The software I wrote is a Kotlin Task Viewer that allows a user to add, list, edit, delete, search, and complete tasks from the command line. Each task stores an id, title, completion status, priority, and optional due date. The program demonstrates Kotlin syntax and core programming concepts through a complete working application.
 
-The purpose of my project was to gain hands-on experience with Kotlin syntax and core programming concepts such as variables, conditionals, loops, functions, and classes. In addition, this project demonstrates the use of collections, data classes, and the `when` keyword to build a complete and functional application.
+The purpose of writing this software was to gain hands-on experience with Kotlin while applying variables, expressions, conditionals, loops, functions, classes, collections, data classes, and the `when` keyword in a practical project.
 
-# Software Demo Video: 
+The Kotlin module that should be graded is located in `kotlin-task-viewer/`. The `typescript-tasklist/` folder contains earlier related work and is not required to run the Kotlin application for this assignment.
 
-# Development Environment
+# Software Demo Video
 
-This software was developed using the following tools:
-
-- IntelliJ IDEA (Community Edition)
-- Kotlin (JVM)
-- Gradle build system
-- Java Development Kit (JDK)
-
-The programming language used in this project is Kotlin, an object-oriented language built on top of Java. Kotlin provides improved readability, concise syntax, and strong type safety compared to traditional Java development.
-
-My project uses Gradle to manage dependencies and build the application. Kotlin’s standard library is used for collections, input handling, and control flow within the application.
+Video
 
 # Project Structure
 
@@ -77,46 +68,32 @@ task-management-system/
 │   ├── .gitignore
 │   └── README.md
 
+# Development Environment
+
+This software was developed using:
+
+- IntelliJ IDEA Community Edition
+- Visual Studio Code
+- Kotlin (JVM)
+- Gradle Wrapper
+- Java Development Kit (JDK 21)
+
+The programming language used in this project is Kotlin. The application uses the Kotlin standard library and is built with Gradle using the Application plugin so that the program can be run from the command line with the included Gradle wrapper.
+
+Run instructions for graders are provided in `GRADING-INSTRUCTIONS.md`.
 
 # Useful Websites
 
-- Kotlin Official Documentation: https://kotlinlang.org/docs/home.html
-- Kotlin Basic Syntax: https://kotlinlang.org/docs/basic-syntax.html
-- Kotlin Collections: https://kotlinlang.org/docs/collections-overview.html
-- Kotlin Data Classes: https://kotlinlang.org/docs/data-classes.html
-- Kotlin at Light Speed: https://youtu.be/7aLlv87l2O4?si=GQLnbcmaAwaXfYmM
-- Full 2025 Kotlin Crash Course For Beginners https://youtu.be/dzUc9vrsldM?si=h5hURUI14ogi9VQi
+- [Kotlin Official Documentation](https://kotlinlang.org/docs/home.html)
+- [Kotlin Basic Syntax](https://kotlinlang.org/docs/basic-syntax.html)
+- [Kotlin Collections Overview](https://kotlinlang.org/docs/collections-overview.html)
+- [Kotlin Data Classes](https://kotlinlang.org/docs/data-classes.html)
+- [Comparison to Java](https://kotlinlang.org/docs/comparison-to-java.html)
 
 # Future Work
 
-There are several improvements that could be made to enhance this application:
-
-- Add persistent storage using files or a database
-- Improve the user interface with a graphical or mobile-based front end
-- Add task sorting and filtering options
-- Improve validation and error handling
-- Integrate more directly with the TypeScript Task List application
-
-# Run Deom Task viewer
-
-## Shortcuts
-tms   # root
-ts    # TypeScript
-kt    # Kotlin
-
-## Run VS Code Terminal
-kt
-cd src/main/kotlin
-kotlinc *.kt -include-runtime -d app.jar
-java -jar app.jar
-
-or
-
-kt
-./gradlew run
-
-## Run in IntelliJ
-Click on Green Button
-
-Or in Terminal
-./gradlew run --console=plain
+- Add persistent storage so tasks remain after the program closes
+- Validate due dates before saving them
+- Add sorting and filtering options
+- Add automated tests for task operations
+- Build a graphical front end that reuses the task logic
