@@ -97,14 +97,14 @@ There are several improvements that could be made to enhance this application:
 - Improve validation and error handling
 - Integrate more directly with the TypeScript Task List application
 
-# Run Deom Task viewer in Terminal
+# Run Deom Task viewer
 
 ## Shortcuts
 tms   # root
 ts    # TypeScript
 kt    # Kotlin
 
-## Run
+## Run VS Code Terminal
 kt
 cd src/main/kotlin
 kotlinc *.kt -include-runtime -d app.jar
@@ -114,3 +114,9 @@ or
 
 kt
 ./gradlew run
+
+## Run in IntelliJ
+Click on Green Button
+
+Or in Terminal
+./gradlew run --console=plain

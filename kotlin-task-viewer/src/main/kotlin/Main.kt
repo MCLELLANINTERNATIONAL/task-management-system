@@ -7,7 +7,7 @@
  * - conditionals
  * - expressions
  * - functions
- * - use of the when keyword
+ * - use of the 'when' keyword
  */
 fun main() {
     val appName = "Kotlin Task Viewer"
