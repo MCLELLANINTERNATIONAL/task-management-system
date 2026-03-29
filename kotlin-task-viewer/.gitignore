@@ -6,10 +6,6 @@
 .gradle/
 build/
 
-# Gradle Wrapper (keep these)
-!gradle/wrapper/gradle-wrapper.jar
-!gradle/wrapper/gradle-wrapper.properties
-
 # ----------------------------
 # IntelliJ / IDE files
 # ----------------------------
@@ -35,6 +31,12 @@ Thumbs.db
 *.jar
 *.war
 *.ear
+
+# ----------------------------
+# Gradle Wrapper (keep these)
+# ----------------------------
+!gradle/wrapper/gradle-wrapper.jar
+!gradle/wrapper/gradle-wrapper.properties
 
 # ----------------------------
 # Logs
