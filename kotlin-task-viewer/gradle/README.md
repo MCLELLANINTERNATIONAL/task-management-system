@@ -8,7 +8,7 @@ The Kotlin Project README submission is at the repository root:
 
 Direct grading and run instructions are at:
 
-- `../GRADING-INSTRUCTIONS.md`
+- `../GRADER-INSTRUCTIONS.md`
 
 ## Run Locally
 
