@@ -130,7 +130,8 @@ To verify that the project builds successfully:
 
 ```bash
 cd kotlin-task-viewer
-./gradlew test
+ran ./gradlew test
+ran ./gradlew run --console=plain
 ```
 
 This project does not currently include automated unit tests, so the `test` task mainly verifies configuration and compilation.

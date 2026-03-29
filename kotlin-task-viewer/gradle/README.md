@@ -8,7 +8,7 @@ The Kotlin Project README submission is at the repository root:
 
 Direct grading and run instructions are at:
 
-- `../GRADER-INSTRUCTIONS.md`
+- `../README.md`
 
 ## Run Locally
 
@@ -21,7 +21,8 @@ From this folder, run:
 Optional verification:
 
 ```bash
-./gradlew test
+ran ./gradlew test
+ran ./gradlew run --console=plain
 ```
 
 ## Source Files
